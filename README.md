@@ -4,23 +4,29 @@
 
 ### photoswiper
 >配置：
-><code>
->paths: {
->&nbsp;&nbsp;photoswipe: './package/photoswiper/photoswipe.min',
->&nbsp;&nbsp;photoswipeui: './package/photoswiper/photoswipe-ui-default.min',
->&nbsp;&nbsp;photo: './package/photoswiper/index',
->}
-> shim: {
->&nbsp;&nbsp;'photoswipe': ['css!./package/photoswiper/photoswipe.css', 'css!./package/photoswiper/default-skin/default-skin.css'] 
->}
-></code>
+```
+paths: {
+   photoswipe: './package/photoswiper/photoswipe.min',
+   photoswipeui: './package/photoswiper/photoswipe-ui-default.min',
+   photo: './package/photoswiper/index',
+}
+shim: {
+   'photoswipe': ['css!./package/photoswiper/photoswipe.css', 
+   'css!./package/photoswiper/default-skin/default-skin.css'] 
+}
+
+```
+
 >用法：
 >js:
-><code>
->require(['photo'], function (photo) {
->&nbsp;&nbsp;photo('.demo-gallery');
->});
-></code>
+
+```
+require(['photo'], function (photo) {
+   photo('.demo-gallery');
+});
+
+```
+
 >html:
 ```
 <span class="bg demo-gallery">
