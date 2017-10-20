@@ -35,5 +35,11 @@ pajax.initModule('main', function () {}, function (targetelement, state) {
 
 ```html
 //关闭无刷新
-<a href="#"></a>
+<a data-ajax="no" href="#"></a>
+//关闭页面跳转后回到顶部
+<a data-istop="no" href="#"></a>
+//设置局部无刷新 data-container 加载内容的容器Class data-fragment  内容的容器Class
+<a data-istop="no" data-container="" data-fragment="" href="#"></a>
+//设置跳转到页面的指定位置 data-target 跳转到页面对应位置的Id
+<a data-target="" href="#"></a>
 ```
