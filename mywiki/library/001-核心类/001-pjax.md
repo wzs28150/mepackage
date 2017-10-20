@@ -1,9 +1,10 @@
 # pjax无刷新封装
->1. [配置：](#配置： "配置：")
->1. [用法：](#用法： "用法：")
-	1. [js:](#js: "js:")
-	1. [html:](#html: "html:")
 
+> 1. [配置：](#配置： "配置：")
+> 2. [用法：](#用法： "用法：")
+
+>   1. [js:](#js: "js:")
+>   2. [html:](#html: "html:")
 
 <br>
 
@@ -11,8 +12,12 @@
 
 ```javascript
 
+shim: {
+  'pajax': ['pjax'],
+},
 paths: {
-  swiper: './package/swiper/v3/swiper.min',
+  pjax: './package/pajax/jquery.pjax',
+  pajax: './package/pajax/pajax',
 }
 ```
 
@@ -21,41 +26,14 @@ paths: {
 ### js:
 
 ```javascript
-var banner;
-banner = function () {
-  var bigswiper = new Swiper('.index .banner.swiper-container', {
-    autoplay: 3000,
-    speed: 1000,
-    loop: true,
-    pagination: '.index .banner .swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.index .banner .swiper-button-next',
-    prevButton: '.index .banner .swiper-button-prev',
-  });
-};
-require(["swiper"], function (swiper) {
-  banner();
+pajax.initModule('main', function () {}, function (targetelement, state) {
+  //回调函数 搭配router 实现mvc
 });
 ```
 
 ### html:
 
 ```html
-<section class="banner swiper-container">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./src/images/i_banner.jpg" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="./src/images/i_banner.jpg" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="./src/images/i_banner.jpg" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="./src/images/i_banner.jpg" alt="">
-      </div>
-  </div>
-  <div class="swiper-pagination"></div>
-</section>
+//关闭无刷新
+<a href="#"></a>
 ```
