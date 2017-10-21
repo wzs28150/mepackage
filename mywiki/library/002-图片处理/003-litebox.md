@@ -1,12 +1,14 @@
 # litebox灯箱弹出窗口插件
+>1. [效果：](#效果： "效果：")
 >1. [配置：](#配置： "配置：")
 >1. [用法：](#用法： "用法：")
 	1. [js:](#js: "js:")
 	1. [html:](#html: "html:")
 
 
-<br>
 
+<br>
+## 效果：
 (https://github.com/wzs28150/mepackage/blob/master/pic/11.gif "欢迎使用meui！")
 ## 配置：
 
