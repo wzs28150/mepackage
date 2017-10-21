@@ -1,11 +1,13 @@
 # photoswiper
+>1. [效果：](#效果： "效果：")
 >1. [配置：](#配置： "配置：")
 >1. [用法：](#用法： "用法：")
 	1. [js:](#js: "js:")
 	1. [html:](#html: "html:")
 
 <br>
-
+## 效果：
+![效果](https://raw.githubusercontent.com/wzs28150/mepackage/master/pic/photoswiper.gif)
 ## 配置：
 
 ```javascript
