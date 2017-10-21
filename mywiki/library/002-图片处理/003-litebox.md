@@ -9,7 +9,8 @@
 
 <br>
 ## 效果：
-(https://github.com/wzs28150/mepackage/blob/master/pic/11.gif "欢迎使用meui！")
+![效果](https://github.com/wzs28150/mepackage/blob/master/pic/11.gif)
+
 ## 配置：
 
 ```javascript
