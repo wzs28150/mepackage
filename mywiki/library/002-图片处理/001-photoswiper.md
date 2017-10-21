@@ -8,6 +8,8 @@
 <br>
 ## 效果：
 ![效果](https://raw.githubusercontent.com/wzs28150/mepackage/master/pic/photoswiper.gif)
+
+
 ## 配置：
 
 ```javascript

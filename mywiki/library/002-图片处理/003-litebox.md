@@ -11,6 +11,7 @@
 ## 效果：
 ![效果](https://raw.githubusercontent.com/wzs28150/mepackage/master/pic/11.gif)
 
+
 ## 配置：
 
 ```javascript
