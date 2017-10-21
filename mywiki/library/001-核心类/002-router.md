@@ -1,9 +1,12 @@
 # router路由类
->1. [配置：](#配置： "配置：")
->1. [用法：](#用法： "用法：")
-	1. [js:](#js: "js:")
-	1. [html:](#html: "html:")
 
+通过router路由类 可以将 url 与 页面 及 控制器一一对应
+
+> 1. [配置：](#配置： "配置：")
+> 2. [用法：](#用法： "用法：")
+
+>   1. [js:](#js: "js:")
+>   2. [html:](#html: "html:")
 
 <br>
 
@@ -13,31 +16,53 @@
 
 paths: {
   router: './package/router/router',
-}    
+}
 ```
 
 ## 用法：
 
-### js:
+### js:(搭配pjax使用)
 
 ```javascript
+/**
+ * 参数一 加载控制器的 元素 class
+ *
+ * 参数二 无刷新状态
+ */
+
+//当页面初次加载时启用
+router.initModule('article', false);
+//无刷新时启用
 pajax.initModule('main', function () {}, function (targetelement, state) {
-  //回调函数 搭配router 实现mvc
-});
+      router.initModule('article', state);
+}
 ```
 
 ### html:
 
 ```html
-//关闭无刷新
-<a data-ajax="no" href="#"></a>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
 
-//关闭页面跳转后回到顶部
-<a data-istop="no" href="#"></a>
-
-//设置局部无刷新 data-container 加载内容的容器Class data-fragment  内容的容器Class
-<a data-istop="no" data-container="" data-fragment="" href="#"></a>
-
-//设置跳转到页面的指定位置 data-target 跳转到页面对应位置的Id
-<a data-target="" href="#"></a>
+<body>
+  <header>
+    <nav>
+      <a href=""></a>
+      <a href=""></a>
+    </nav>
+  </header>
+  <main>
+  //加载控制器
+  <article class="about" data-main="about">
+  //加载控制器下的方法
+      <input type="hidden" class="eraction" data-fun="about_index">
+  </article>    
+  </main>
+  <footer></footer>
+</body>
+</html>
 ```
