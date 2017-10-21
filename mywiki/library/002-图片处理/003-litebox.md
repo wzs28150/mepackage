@@ -9,7 +9,7 @@
 
 <br>
 ## 效果：
-![效果](https://github.com/wzs28150/mepackage/blob/master/pic/11.gif)
+![效果](https://raw.githubusercontent.com/wzs28150/mepackage/master/pic/11.gif)
 
 ## 配置：
 
