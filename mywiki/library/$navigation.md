@@ -3,6 +3,7 @@
 
 ##### 核心类
 - [pjax](?file=001-核心类/001-pjax "pjax")
+- [router](?file=001-核心类/002-router "router")
 
 ##### 图片处理
 - [photoswiper](?file=002-图片处理/001-photoswiper "photoswiper")
