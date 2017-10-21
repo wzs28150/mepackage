@@ -9,6 +9,7 @@
 ##### 图片处理
 - [photoswiper](?file=002-图片处理/001-photoswiper "photoswiper")
 - [swiper](?file=002-图片处理/002-swiper "swiper")
+- [litebox](?file=002-图片处理/003-litebox "litebox")
 
 ##### 分页类
 - [page](?file=003-分页类/001-page "page")
